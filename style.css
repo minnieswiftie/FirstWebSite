@@ -1,0 +1,27 @@
+.navbar { 
+	width: 100%;
+	height: 50px;
+	background: #C8E3FF;
+	position: sticky;
+	top:0;
+}
+
+.navbar > .element {
+	width: 19.5%;
+	line-height: 50px;
+	color: black;
+	font-weight: bold;
+	display: inline-block;
+	margin: 100;
+	font-family: Courier New;
+	text-decoration: none;
+	text-align: center;
+}
+
+.profilePic {
+	width  : 40%;
+	height : auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}	
