@@ -1,3 +1,120 @@
+
+
+.row {
+	margin: 4px - 8px;
+}
+
+.row, .row>.column{
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 20%;
+	height: 20%;
+}
+
+.row: after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.info {
+	padding: 10px;
+	font-family: DS_Mysticora;
+}
+
+@media screen and (max-width: 900px) {
+	.column{
+		width:33%;
+		height:20%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column{
+		width:50%;
+		height:20%;
+	}
+}
+.gallery{
+	max-width:90%;
+	margin-left:5%;
+	height: auto;
+	position:relative;
+	float:left;
+}
+.gallery h1{
+	margin:0px;
+	font-size: 50px;
+
+}
+.artpost{
+	float:left;
+	width: 200px;
+	height: 200px
+	animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused; 
+}
+
+.artpost img{
+	width: 90%;
+	height:70%;
+	margin-bottom:0px;
+	animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused; 
+}
+.artpost p{
+	font-size:20px;
+	margin:0px;
+	font-weight:bold;
+}
+
+.artpost:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(2turn); }
+}
+
+.profilePic {
+	width  : 100%;
+	height : auto;
+	display: block;
+	margin-left: auto;
+	 animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused; 
+	right: auto;
+}
+
+.profilePic:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(2turn); }
+}
+
+
+
+
+.navbarCurrent {
+	width: 100%;
+	height: 50px;
+	background: ;
+	position: sticky;
+	top:0;
+}
+
 .navbar { 
 	width: 100%;
 	height: 50px;
@@ -6,11 +123,22 @@
 	top:0;
 }
 
+.navbar > .element2 {
+	width: 19.5%;
+	line-height: 50px;
+	color: black;
+	display: inline-block;
+	margin: 100;
+	font-weight: bold;
+	background: #003366;
+	font-family: Courier New;
+	text-decoration: none;
+	text-align: center;
+}
 .navbar > .element {
 	width: 19.5%;
 	line-height: 50px;
 	color: black;
-	font-weight: bold;
 	display: inline-block;
 	margin: 100;
 	font-family: Courier New;
@@ -18,10 +146,35 @@
 	text-align: center;
 }
 
-.profilePic {
-	width  : 40%;
-	height : auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}	
+
+
+
+.top-margin {
+	background-image: linear-gradient(white, red);
+	/*background-color: #98C1EF; */
+	width: 10000px;
+	height: 100px;
+
+}
+.top-margin > .titletext {
+	width: 14%;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Great Vibes', cursive;
+	font-size: 40px;
+	text-decoration: none;
+	
+	animation-play-state: paused; 
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
